@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: example1 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP37A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "../include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_UNICODE" /D "_M_IX_86" /D "ALLEGRO_STATICLINK" /FR"../obj/msvc/examples/" /Fp"../obj/msvc/examples/example1.pch" /YX /Fo"../obj/msvc/examples/" /Fd"../obj/msvc/examples/" /FD /c 
+"D:\Works\AlFont\examples\example1.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP37A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP37B.tmp" with contents
+[
+alleg_s.lib ..\lib\msvc\alfont.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib ole32.lib dinput.lib ddraw.lib dxguid.lib winmm.lib dsound.lib /nologo /subsystem:windows /pdb:none /machine:I386 /out:"msvc/example1.exe" 
+\Works\AlFont\obj\msvc\examples\example1.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP37B.tmp"
+<h3>Output Window</h3>
+Compiling...
+example1.c
+Linking...
+
+
+
+<h3>Results</h3>
+example1.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

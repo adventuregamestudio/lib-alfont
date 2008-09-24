@@ -1,0 +1,116 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: alfont_static - Win32 MD--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP372.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /I "include" /I "freetype\include" /D "WIN32" /D "NDEBUG" /D "_UNICODE" /D "_LIB" /D "ALLEGRO_STATICLINK" /FR"obj\msvc\static/" /Fo"obj\msvc\static/" /Fd"obj\msvc\static/" /FD /c 
+"D:\Works\AlFont\src\alfont.c"
+"D:\Works\AlFont\freetype\src\autofit\autofit.c"
+"D:\Works\AlFont\freetype\src\bdf\bdf.c"
+"D:\Works\AlFont\freetype\src\cff\cff.c"
+"D:\Works\AlFont\freetype\src\base\ftbase.c"
+"D:\Works\AlFont\freetype\src\base\ftbitmap.c"
+"D:\Works\AlFont\freetype\src\cache\ftcache.c"
+"D:\Works\AlFont\freetype\src\base\ftdebug.c"
+"D:\Works\AlFont\freetype\src\base\ftglyph.c"
+"D:\Works\AlFont\freetype\src\gzip\ftgzip.c"
+"D:\Works\AlFont\freetype\src\base\ftinit.c"
+"D:\Works\AlFont\freetype\src\lzw\ftlzw.c"
+"D:\Works\AlFont\freetype\src\base\ftmm.c"
+"D:\Works\AlFont\freetype\src\base\ftsystem.c"
+"D:\Works\AlFont\freetype\src\otvalid\otvalid.c"
+"D:\Works\AlFont\freetype\src\pcf\pcf.c"
+"D:\Works\AlFont\freetype\src\pfr\pfr.c"
+"D:\Works\AlFont\freetype\src\psaux\psaux.c"
+"D:\Works\AlFont\freetype\src\pshinter\pshinter.c"
+"D:\Works\AlFont\freetype\src\psnames\psmodule.c"
+"D:\Works\AlFont\freetype\src\raster\raster.c"
+"D:\Works\AlFont\freetype\src\sfnt\sfnt.c"
+"D:\Works\AlFont\freetype\src\smooth\smooth.c"
+"D:\Works\AlFont\freetype\src\truetype\truetype.c"
+"D:\Works\AlFont\freetype\src\type1\type1.c"
+"D:\Works\AlFont\freetype\src\cid\type1cid.c"
+"D:\Works\AlFont\freetype\src\type42\type42.c"
+"D:\Works\AlFont\freetype\src\winfonts\winfnt.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP372.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP373.tmp" with contents
+[
+/nologo /out:"lib\msvc\alfont.lib" 
+.\obj\msvc\static\alfont.obj
+.\obj\msvc\static\autofit.obj
+.\obj\msvc\static\bdf.obj
+.\obj\msvc\static\cff.obj
+.\obj\msvc\static\ftbase.obj
+.\obj\msvc\static\ftbitmap.obj
+.\obj\msvc\static\ftcache.obj
+.\obj\msvc\static\ftdebug.obj
+.\obj\msvc\static\ftglyph.obj
+.\obj\msvc\static\ftgzip.obj
+.\obj\msvc\static\ftinit.obj
+.\obj\msvc\static\ftlzw.obj
+.\obj\msvc\static\ftmm.obj
+.\obj\msvc\static\ftsystem.obj
+.\obj\msvc\static\otvalid.obj
+.\obj\msvc\static\pcf.obj
+.\obj\msvc\static\pfr.obj
+.\obj\msvc\static\psaux.obj
+.\obj\msvc\static\pshinter.obj
+.\obj\msvc\static\psmodule.obj
+.\obj\msvc\static\raster.obj
+.\obj\msvc\static\sfnt.obj
+.\obj\msvc\static\smooth.obj
+.\obj\msvc\static\truetype.obj
+.\obj\msvc\static\type1.obj
+.\obj\msvc\static\type1cid.obj
+.\obj\msvc\static\type42.obj
+.\obj\msvc\static\winfnt.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP373.tmp"
+<h3>Output Window</h3>
+Compiling...
+alfont.c
+autofit.c
+bdf.c
+cff.c
+ftbase.c
+ftbitmap.c
+ftcache.c
+ftdebug.c
+ftglyph.c
+ftgzip.c
+ftinit.c
+ftlzw.c
+ftmm.c
+ftsystem.c
+otvalid.c
+pcf.c
+pfr.c
+psaux.c
+pshinter.c
+psmodule.c
+Generating Code...
+Compiling...
+raster.c
+sfnt.c
+smooth.c
+truetype.c
+type1.c
+type1cid.c
+type42.c
+winfnt.c
+Generating Code...
+Creating library...
+
+
+
+<h3>Results</h3>
+alfont.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
