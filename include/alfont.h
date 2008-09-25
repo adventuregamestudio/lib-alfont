@@ -10,9 +10,9 @@
 /* See FTL.txt (FreeType Project License) for license */
 
 
-#define ALFONT_WINDOWS   //When compiling in WINDOWS,please uncomment this line.
+//#define ALFONT_WINDOWS   //When compiling in WINDOWS,please uncomment this line.
 //#define ALFONT_DOS 	 //When compiling in DOS,please uncomment this line. 
-//#define ALFONT_LINUX 	 //When compiling in LINUX,please uncomment this line.
+#define ALFONT_LINUX 	 //When compiling in LINUX,please uncomment this line.
 
 
 #ifndef ALFONT_H

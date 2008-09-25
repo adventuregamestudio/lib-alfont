@@ -450,7 +450,7 @@ ALFONT_FONT *alfont_load_font(const char *filepathname) {
   alfont_set_char_extra_spacing(font, 0);
 
   //Initial Font attribute
-  font->language="";		   /* Initial Language */
+  font->language=strdup("");		   /* Initial Language */
   font->type=0;				   /* Initial Code Convert */
   font->outline_top=0;		   /* Initial Font top outline width */
   font->outline_bottom=0;	   /* Initial Font bottom outline width */
@@ -530,7 +530,7 @@ ALFONT_FONT *alfont_load_font_from_mem(const char *data, int data_len) {
   alfont_set_char_extra_spacing(font, 0);
 
   //Initial Font attribute
-  font->language="";		   /* Initial Language */
+  font->language=strdup("");		   /* Initial Language */
   font->type=0;				   /* Initial Code Convert */
   font->outline_top=0;		   /* Initial Font top outline width */
   font->outline_bottom=0;	   /* Initial Font bottom outline width */
@@ -871,7 +871,7 @@ void alfont_textout_aa_ex(BITMAP *bmp, ALFONT_FONT *f, const char *s, int x, int
   last_glyph_index = 0;
 
 #ifdef ALFONT_LINUX //Fix for Linux Unicode System(be converted)
-  for (character = ugetxc(&(const char*)lpszW); character != 0; character = ugetxc(&(const char*)lpszW),character = ugetxc(&(const char*)lpszW)) {
+  for (character = ugetxc((const char**)lpszW); character != 0; character = ugetxc((const char**)lpszW),character = ugetxc((const char**)lpszW)) {
 #else
   for (character = ugetxc(&(const char*)lpszW); character != 0; character = ugetxc(&(const char*)lpszW)) {
 #endif	
@@ -1957,7 +1957,7 @@ void alfont_textout_ex(BITMAP *bmp, ALFONT_FONT *f, const char *s, int x, int y,
   last_glyph_index = 0;
 
 #ifdef ALFONT_LINUX //Fix for Linux Unicode System(be converted)
-  for (character = ugetxc(&(const char*)lpszW); character != 0; character = ugetxc(&(const char*)lpszW),character = ugetxc(&(const char*)lpszW)) {
+  for (character = ugetxc((const char**)lpszW); character != 0; character = ugetxc((const char**)lpszW),character = ugetxc((const char**)lpszW)) {
 #else
   for (character = ugetxc(&(const char*)lpszW); character != 0; character = ugetxc(&(const char*)lpszW)) {
 #endif	
@@ -2735,7 +2735,7 @@ int alfont_text_length(ALFONT_FONT *f, const char *str) {
   /* virtually draw char by char */
   last_glyph_index = 0;
 #ifdef ALFONT_LINUX //Fix for Linux Unicode System(be converted)
-  for (character = ugetxc(&(const char*)lpszW); character != 0; character = ugetxc(&(const char*)lpszW),character = ugetxc(&(const char*)lpszW)) {
+  for (character = ugetxc((const char**)lpszW); character != 0; character = ugetxc((const char**)lpszW),character = ugetxc((const char**)lpszW)) {
 #else
   for (character = ugetxc(&(const char*)lpszW); character != 0; character = ugetxc(&(const char*)lpszW)) {
 #endif	
@@ -3712,7 +3712,9 @@ void alfont_set_language(ALFONT_FONT *f, const char *language) {
   if (language == NULL) {
 	language = "";
   }
-  f->language=(char *)malloc(strlen(language)*sizeof(char));
+  if (f->language)
+	free(f->language)
+  f->language=(char *)malloc((strlen(language)+1)*sizeof(char));
   strcpy(f->language,language);
 }
 
