@@ -1,6 +1,5 @@
 # Makefile for AllegroFont using FreeType 2
 
-
 # select (uncomment) one target and comment DJGPP if you are not aiming
 # for that platform
 #TARGET=DJGPP_STATIC
@@ -12,7 +11,7 @@ TARGET=MINGW32_STATIC
 CC=gcc
 LFLAGS=
 LIBIMP=
-
+INSTALL_PREFIX=/usr/local/lib
 
 
 # DJGPP_STATIC
@@ -79,7 +78,8 @@ vpath %.c freetype/src/winfonts
 vpath %.c src
 vpath %.o $(OBJDIR)
 
-CFLAGS=$(TARGETFLAGS) -Ifreetype/include -Iinclude
+CFLAGS=$(ALLEGRO_LIB_DIR) $(TARGETFLAGS) -Ifreetype/include -Iinclude
+LFLAGS=$(ALLEGRO_INCLUDE_DIR)
 OBJECTS=alfont.o ftsystem.o ftdebug.o ftinit.o ftbase.o ftglyph.o ftmm.o autohint.o ftcache.o cff.o type1cid.o pcf.o psaux.o pshinter.o psmodule.o raster.o sfnt.o smooth.o truetype.o type1.o winfnt.o type42.o ftgzip.o pfr.o bdf.o
 OBJECTS2=$(addprefix $(OBJDIR)/,$(OBJECTS))
 
@@ -106,4 +106,11 @@ endif
 
 clean:
 	rm -f $(OBJECTS2) $(LIBDEST) $(LIBIMP)
+
+.PHONY: install
+install: $(LIBDEST)
+	install -d $(INSTALL_PREFIX)/lib
+	install -d $(INSTALL_PREFIX)/include
+	install -m 644 $(LIBDEST) $(INSTALL_PREFIX)/lib
+	install -m 644 include/*.h $(INSTALL_PREFIX)/include
 
