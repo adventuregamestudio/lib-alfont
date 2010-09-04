@@ -11,7 +11,6 @@ TARGET=MINGW32_STATIC
 CC=gcc
 LFLAGS=
 LIBIMP=
-INSTALL_PREFIX=/usr/local
 
 
 # DJGPP_STATIC
@@ -29,6 +28,7 @@ LFLAGS=-mwindows
 TARGETFLAGS=-Wall -O2 -march=pentium -fomit-frame-pointer -finline-functions -ffast-math
 OBJDIR=obj/mingw32/static
 LIBDEST=lib/mingw32/libalfont.a
+INSTALL_PREFIX=$(MINGDIR)
 endif
 
 
@@ -41,6 +41,7 @@ LIBIMP=lib/mingw32/libalfontdll.a
 LIBDEST=lib/mingw32/alfont.dll
 ALFONT_DLL=1
 ALFONT_DLL_EXPORTS=1
+INSTALL_PREFIX=$(MINGDIR)
 endif
 
 
@@ -50,6 +51,7 @@ ifeq ($(TARGET),LINUX_STATIC)
 TARGETFLAGS=-Wall -O2 -march=pentium -fomit-frame-pointer -finline-functions -ffast-math
 OBJDIR=obj/linux/static
 LIBDEST=lib/linux/libalfont.a
+INSTALL_PREFIX=/usr/local
 endif
 
 
@@ -109,8 +111,12 @@ clean:
 
 .PHONY: install
 install: $(LIBDEST)
+ifeq ($(TARGET),MINGW32_STATIC)
+	copy /y $(subst /,\,$(LIBDEST)) $(INSTALL_PREFIX)\lib
+	copy /y include\*.h $(INSTALL_PREFIX)\include
+else
 	install -d $(INSTALL_PREFIX)/lib
 	install -d $(INSTALL_PREFIX)/include
 	install -m 644 $(LIBDEST) $(INSTALL_PREFIX)/lib
 	install -m 644 include/*.h $(INSTALL_PREFIX)/include
-
+endif
