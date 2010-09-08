@@ -3,9 +3,9 @@
 
 # select (uncomment) one target and commet DJGPP again if you are not
 # aiming for that platform
-TARGET=DJGPP_STATIC
+#TARGET=DJGPP_STATIC
 #TARGET=MINGW32_STATIC
-#TARGET=LINUX_STATIC
+TARGET=LINUX_STATIC
 
 
 CC=gcc

@@ -3,10 +3,11 @@
 
 # select (uncomment) one target and comment DJGPP if you are not aiming
 # for that platform
-TARGET=DJGPP_STATIC
+
+#TARGET=DJGPP_STATIC
 #TARGET=MINGW32_STATIC
 #TARGET=MINGW32_DLL
-#TARGET=LINUX_STATIC
+TARGET=LINUX_STATIC
 
 
 CC=gcc
@@ -21,6 +22,8 @@ TARGETFLAGS=-Wall -O2 -march=pentium -fomit-frame-pointer -finline-functions -ff
 LIBS=../lib/djgpp/libiconv.a  -liconv
 OBJDIR=obj/djgpp/static
 LIBDEST=lib/djgpp/libalfont.a
+LIB_INSTALL_PATH = $(DJDIR)/lib
+INCLUDE_INSTALL_PATH = $(DJDIR)/include
 endif
 
 
@@ -31,6 +34,8 @@ LFLAGS=-mwindows
 TARGETFLAGS=-Wall -O2 -march=pentium -fomit-frame-pointer -finline-functions -ffast-math
 OBJDIR=obj/mingw32/static
 LIBDEST=lib/mingw32/libalfont.a
+LIB_INSTALL_PATH = $(MINGDIR)/lib
+INCLUDE_INSTALL_PATH = $(MINGDIR)/include
 endif
 
 
@@ -43,6 +48,8 @@ LIBIMP=lib/mingw32/libalfontdll.a
 LIBDEST=lib/mingw32/alfont.dll
 ALFONT_DLL=1
 ALFONT_DLL_EXPORTS=1
+LIB_INSTALL_PATH = $(MINGDIR)/lib
+INCLUDE_INSTALL_PATH = $(MINGDIR)/include
 endif
 
 
@@ -52,6 +59,8 @@ ifeq ($(TARGET),LINUX_STATIC)
 TARGETFLAGS=-Wall -O2 -march=pentium -fomit-frame-pointer -finline-functions -ffast-math
 OBJDIR=obj/linux/static
 LIBDEST=lib/linux/libalfont.a
+LIB_INSTALL_PATH = /usr/local/lib
+INCLUDE_INSTALL_PATH = /usr/local/include
 endif
 
 
@@ -106,7 +115,16 @@ endif
 %.o: %.c
 	$(CC) -c $(CFLAGS) $< -o $(OBJDIR)/$@
 
-
+.PHONY: clean install
 clean:
 	rm -f $(OBJECTS2) $(LIBDEST) $(LIBIMP)
 
+.PHONY: install
+install: $(LIBDEST)
+ifeq ($(TARGET),MINGW32_DLL)
+	copy /y $(LIBDEST) $(subst /,\,$(LIB_INSTALL_PATH))
+	copy /y include\*.h $(subst /,\,$(INCLUDE_INSTALL_PATH))
+else
+	cp $(LIBDEST) $(LIB_INSTALL_PATH)
+	cp include/*.h $(INCLUDE_INSTALL_PATH)
+endif
