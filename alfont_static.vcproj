@@ -294,7 +294,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="lib\msvc\alfont_mt.lib"
+				OutputFile="lib\msvc\alfont_mt_d.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
