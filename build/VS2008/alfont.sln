@@ -5,7 +5,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "alfont_dll", "alfont_dll.vc
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "alfont_static", "alfont_static.vcproj", "{F265E3D4-D7C0-4E52-8E17-C996CBEBBBF4}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example1", "examples\example1.vcproj", "{D4849BEA-4A12-4AE2-B9F8-402DEC2929C6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "example1", "..\..\examples\example1.vcproj", "{D4849BEA-4A12-4AE2-B9F8-402DEC2929C6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{CA4F3494-58C3-4A3C-8F99-AE6816B5881E} = {CA4F3494-58C3-4A3C-8F99-AE6816B5881E}
 		{F265E3D4-D7C0-4E52-8E17-C996CBEBBBF4} = {F265E3D4-D7C0-4E52-8E17-C996CBEBBBF4}

@@ -17,8 +17,8 @@
 	<Configurations>
 		<Configuration
 			Name="MD|Win32"
-			OutputDirectory=".\obj\msvc\static\$(ConfigurationName)"
-			IntermediateDirectory=".\obj\msvc\static\$(ConfigurationName)"
+			OutputDirectory="..\..\lib\msvc\static\"
+			IntermediateDirectory="..\..\obj\msvc\static\$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -44,15 +44,15 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
-				AdditionalIncludeDirectories="include,freetype\include"
+				AdditionalIncludeDirectories="..\..\include,..\..\freetype\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB"
 				StringPooling="true"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
-				PrecompiledHeaderFile=".\obj\msvc\static/$(ConfigurationName)/alfont_static.pch"
-				AssemblerListingLocation=".\obj\msvc\static/$(ConfigurationName)/"
-				ObjectFile=".\obj\msvc\static/$(ConfigurationName)/"
-				ProgramDataBaseFileName=".\obj\msvc\static/$(ConfigurationName)/"
+				PrecompiledHeaderFile="..\..\obj\msvc\static/$(ConfigurationName)/alfont_static.pch"
+				AssemblerListingLocation="..\..\obj\msvc\static/$(ConfigurationName)/"
+				ObjectFile="..\..\obj\msvc\static/$(ConfigurationName)/"
+				ProgramDataBaseFileName="..\..\obj\msvc\static/$(ConfigurationName)/"
 				WarningLevel="3"
 				SuppressStartupBanner="true"
 			/>
@@ -69,7 +69,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="lib\msvc\alfont_md.lib"
+				OutputFile="$(OutDir)\alfont_md.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -81,7 +81,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\obj\msvc\static/alfont_static.bsc"
+				OutputFile="..\..\obj\msvc\static/alfont_static.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -92,8 +92,8 @@
 		</Configuration>
 		<Configuration
 			Name="MT|Win32"
-			OutputDirectory=".\obj\msvc\static\$(ConfigurationName)"
-			IntermediateDirectory=".\obj\msvc\static\$(ConfigurationName)"
+			OutputDirectory="..\..\lib\msvc\static\"
+			IntermediateDirectory="..\..\obj\msvc\static\$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -119,15 +119,15 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
-				AdditionalIncludeDirectories="include,freetype\include"
+				AdditionalIncludeDirectories="..\..\include,..\..\freetype\include"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB"
 				StringPooling="true"
 				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
-				PrecompiledHeaderFile=".\obj\msvc\static/$(ConfigurationName)/alfont_static.pch"
-				AssemblerListingLocation=".\obj\msvc\static/$(ConfigurationName)/"
-				ObjectFile=".\obj\msvc\static/$(ConfigurationName)/"
-				ProgramDataBaseFileName=".\obj\msvc\static/$(ConfigurationName)/"
+				PrecompiledHeaderFile="..\..\obj\msvc\static/$(ConfigurationName)/alfont_static.pch"
+				AssemblerListingLocation="..\..\obj\msvc\static/$(ConfigurationName)/"
+				ObjectFile="..\..\obj\msvc\static/$(ConfigurationName)/"
+				ProgramDataBaseFileName="..\..\obj\msvc\static/$(ConfigurationName)/"
 				WarningLevel="3"
 				SuppressStartupBanner="true"
 			/>
@@ -144,7 +144,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="lib\msvc\alfont_mt.lib"
+				OutputFile="$(OutDir)\alfont_mt.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -156,7 +156,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\obj\msvc\static/alfont_static.bsc"
+				OutputFile="..\..\obj\msvc\static/alfont_static.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -167,8 +167,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug MD|Win32"
-			OutputDirectory=".\obj\msvc\static\$(ConfigurationName)"
-			IntermediateDirectory=".\obj\msvc\static\$(ConfigurationName)"
+			OutputDirectory="..\..\lib\msvc\static\"
+			IntermediateDirectory="..\..\obj\msvc\static\$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -194,15 +194,15 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
-				AdditionalIncludeDirectories="include,freetype\include"
+				AdditionalIncludeDirectories="..\..\include,..\..\freetype\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB"
 				StringPooling="true"
 				RuntimeLibrary="3"
 				EnableFunctionLevelLinking="true"
-				PrecompiledHeaderFile=".\obj\msvc\static/$(ConfigurationName)/alfont_static.pch"
-				AssemblerListingLocation=".\obj\msvc\static/$(ConfigurationName)/"
-				ObjectFile=".\obj\msvc\static/$(ConfigurationName)/"
-				ProgramDataBaseFileName=".\obj\msvc\static/$(ConfigurationName)/"
+				PrecompiledHeaderFile="..\..\obj\msvc\static/$(ConfigurationName)/alfont_static.pch"
+				AssemblerListingLocation="..\..\obj\msvc\static/$(ConfigurationName)/"
+				ObjectFile="..\..\obj\msvc\static/$(ConfigurationName)/"
+				ProgramDataBaseFileName="..\..\obj\msvc\static/$(ConfigurationName)/"
 				WarningLevel="3"
 				SuppressStartupBanner="true"
 			/>
@@ -219,7 +219,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="lib\msvc\alfont_md_d.lib"
+				OutputFile="$(OutDir)\alfont_md_d.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -231,7 +231,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\obj\msvc\static/alfont_static.bsc"
+				OutputFile="..\..\obj\msvc\static/alfont_static.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -242,8 +242,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug MT|Win32"
-			OutputDirectory=".\obj\msvc\static\$(ConfigurationName)"
-			IntermediateDirectory=".\obj\msvc\static\$(ConfigurationName)"
+			OutputDirectory="..\..\lib\msvc\static\"
+			IntermediateDirectory="..\..\obj\msvc\static\$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -269,15 +269,15 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
-				AdditionalIncludeDirectories="include,freetype\include"
+				AdditionalIncludeDirectories="..\..\include,..\..\freetype\include"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB"
 				StringPooling="true"
 				RuntimeLibrary="1"
 				EnableFunctionLevelLinking="true"
-				PrecompiledHeaderFile=".\obj\msvc\static/$(ConfigurationName)/alfont_static.pch"
-				AssemblerListingLocation=".\obj\msvc\static/$(ConfigurationName)/"
-				ObjectFile=".\obj\msvc\static/$(ConfigurationName)/"
-				ProgramDataBaseFileName=".\obj\msvc\static/$(ConfigurationName)/"
+				PrecompiledHeaderFile="..\..\obj\msvc\static/$(ConfigurationName)/alfont_static.pch"
+				AssemblerListingLocation="..\..\obj\msvc\static/$(ConfigurationName)/"
+				ObjectFile="..\..\obj\msvc\static/$(ConfigurationName)/"
+				ProgramDataBaseFileName="..\..\obj\msvc\static/$(ConfigurationName)/"
 				WarningLevel="3"
 				SuppressStartupBanner="true"
 			/>
@@ -294,7 +294,7 @@
 			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="lib\msvc\alfont_mt_d.lib"
+				OutputFile="$(OutDir)\alfont_mt_d.lib"
 				SuppressStartupBanner="true"
 			/>
 			<Tool
@@ -306,7 +306,7 @@
 			<Tool
 				Name="VCBscMakeTool"
 				SuppressStartupBanner="true"
-				OutputFile=".\obj\msvc\static/alfont_static.bsc"
+				OutputFile="..\..\obj\msvc\static/alfont_static.bsc"
 			/>
 			<Tool
 				Name="VCFxCopTool"
@@ -324,7 +324,7 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 			>
 			<File
-				RelativePath="src\alfont.c"
+				RelativePath="..\..\src\alfont.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -364,7 +364,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\autohint\autohint.c"
+				RelativePath="..\..\freetype\src\autohint\autohint.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -404,7 +404,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\bdf\bdf.c"
+				RelativePath="..\..\freetype\src\bdf\bdf.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -444,7 +444,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\cff\cff.c"
+				RelativePath="..\..\freetype\src\cff\cff.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -484,7 +484,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\base\ftbase.c"
+				RelativePath="..\..\freetype\src\base\ftbase.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -524,7 +524,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\cache\ftcache.c"
+				RelativePath="..\..\freetype\src\cache\ftcache.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -564,7 +564,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\base\ftdebug.c"
+				RelativePath="..\..\freetype\src\base\ftdebug.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -604,7 +604,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\base\ftglyph.c"
+				RelativePath="..\..\freetype\src\base\ftglyph.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -644,7 +644,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\gzip\ftgzip.c"
+				RelativePath="..\..\freetype\src\gzip\ftgzip.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -684,7 +684,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\base\ftinit.c"
+				RelativePath="..\..\freetype\src\base\ftinit.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -724,7 +724,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\base\ftmm.c"
+				RelativePath="..\..\freetype\src\base\ftmm.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -764,7 +764,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\base\ftsystem.c"
+				RelativePath="..\..\freetype\src\base\ftsystem.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -804,7 +804,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\pcf\pcf.c"
+				RelativePath="..\..\freetype\src\pcf\pcf.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -844,7 +844,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\pfr\pfr.c"
+				RelativePath="..\..\freetype\src\pfr\pfr.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -884,7 +884,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\psaux\psaux.c"
+				RelativePath="..\..\freetype\src\psaux\psaux.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -924,7 +924,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\pshinter\pshinter.c"
+				RelativePath="..\..\freetype\src\pshinter\pshinter.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -964,7 +964,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\psnames\psmodule.c"
+				RelativePath="..\..\freetype\src\psnames\psmodule.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -1004,7 +1004,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\raster\raster.c"
+				RelativePath="..\..\freetype\src\raster\raster.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -1044,7 +1044,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\sfnt\sfnt.c"
+				RelativePath="..\..\freetype\src\sfnt\sfnt.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -1084,7 +1084,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\smooth\smooth.c"
+				RelativePath="..\..\freetype\src\smooth\smooth.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -1124,7 +1124,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\truetype\truetype.c"
+				RelativePath="..\..\freetype\src\truetype\truetype.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -1164,7 +1164,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\type1\type1.c"
+				RelativePath="..\..\freetype\src\type1\type1.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -1204,7 +1204,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\cid\type1cid.c"
+				RelativePath="..\..\freetype\src\cid\type1cid.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -1244,7 +1244,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\type42\type42.c"
+				RelativePath="..\..\freetype\src\type42\type42.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -1284,7 +1284,7 @@
 				</FileConfiguration>
 			</File>
 			<File
-				RelativePath="freetype\src\winfonts\winfnt.c"
+				RelativePath="..\..\freetype\src\winfonts\winfnt.c"
 				>
 				<FileConfiguration
 					Name="MD|Win32"
@@ -1329,31 +1329,31 @@
 			Filter="h;hpp;hxx;hm;inl"
 			>
 			<File
-				RelativePath="include\alfont.h"
+				RelativePath="..\..\include\alfont.h"
 				>
 			</File>
 			<File
-				RelativePath="include\alfontdll.h"
+				RelativePath="..\..\include\alfontdll.h"
 				>
 			</File>
 			<File
-				RelativePath="freetype\builds\win32\visualc\include\freetype\freetype.h"
+				RelativePath="..\..\freetype\builds\win32\visualc\include\freetype\freetype.h"
 				>
 			</File>
 			<File
-				RelativePath="freetype\builds\win32\visualc\include\freetype\config\ftconfig.h"
+				RelativePath="..\..\freetype\builds\win32\visualc\include\freetype\config\ftconfig.h"
 				>
 			</File>
 			<File
-				RelativePath="freetype\builds\win32\visualc\include\freetype\fterrors.h"
+				RelativePath="..\..\freetype\builds\win32\visualc\include\freetype\fterrors.h"
 				>
 			</File>
 			<File
-				RelativePath="freetype\builds\win32\visualc\include\freetype\config\ftoption.h"
+				RelativePath="..\..\freetype\builds\win32\visualc\include\freetype\config\ftoption.h"
 				>
 			</File>
 			<File
-				RelativePath="freetype\builds\win32\visualc\include\freetype\fttypes.h"
+				RelativePath="..\..\freetype\builds\win32\visualc\include\freetype\fttypes.h"
 				>
 			</File>
 		</Filter>

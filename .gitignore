@@ -1,6 +1,7 @@
-*.ncb
-*.suo
-*.user
+build/VS2008/*.ncb
+build/VS2008/*.suo
+build/VS2008/*.user
+
 examples/msvc/
 lib/msvc/
 obj/msvc/
