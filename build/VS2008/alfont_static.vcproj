@@ -17,8 +17,8 @@
 	<Configurations>
 		<Configuration
 			Name="MD|Win32"
-			OutputDirectory="..\..\lib\msvc\static\"
-			IntermediateDirectory="..\..\obj\msvc\static\$(ConfigurationName)"
+			OutputDirectory="..\..\lib\msvc\vs2008\static\"
+			IntermediateDirectory="..\..\obj\msvc\vs2008\static\$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -92,8 +92,8 @@
 		</Configuration>
 		<Configuration
 			Name="MT|Win32"
-			OutputDirectory="..\..\lib\msvc\static\"
-			IntermediateDirectory="..\..\obj\msvc\static\$(ConfigurationName)"
+			OutputDirectory="..\..\lib\msvc\vs2008\static\"
+			IntermediateDirectory="..\..\obj\msvc\vs2008\static\$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -167,8 +167,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug MD|Win32"
-			OutputDirectory="..\..\lib\msvc\static\"
-			IntermediateDirectory="..\..\obj\msvc\static\$(ConfigurationName)"
+			OutputDirectory="..\..\lib\msvc\vs2008\static\"
+			IntermediateDirectory="..\..\obj\msvc\vs2008\static\$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"
@@ -242,8 +242,8 @@
 		</Configuration>
 		<Configuration
 			Name="Debug MT|Win32"
-			OutputDirectory="..\..\lib\msvc\static\"
-			IntermediateDirectory="..\..\obj\msvc\static\$(ConfigurationName)"
+			OutputDirectory="..\..\lib\msvc\vs2008\static\"
+			IntermediateDirectory="..\..\obj\msvc\vs2008\static\$(ConfigurationName)"
 			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC60.vsprops"
 			UseOfMFC="0"

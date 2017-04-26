@@ -72,23 +72,23 @@
     <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MD|Win32'">
-    <OutDir>..\..\lib\msvc\static\</OutDir>
-    <IntDir>..\..\obj\msvc\static\$(Configuration)\</IntDir>
+    <OutDir>..\..\lib\msvc\vs2015\static\</OutDir>
+    <IntDir>..\..\obj\msvc\vs2015\static\$(Configuration)\</IntDir>
     <TargetName>alfont_md</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MT|Win32'">
-    <OutDir>..\..\lib\msvc\static\</OutDir>
-    <IntDir>..\..\obj\msvc\static\$(Configuration)\</IntDir>
+    <OutDir>..\..\lib\msvc\vs2015\static\</OutDir>
+    <IntDir>..\..\obj\msvc\vs2015\static\$(Configuration)\</IntDir>
     <TargetName>alfont_mt</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug MD|Win32'">
-    <OutDir>..\..\lib\msvc\static\</OutDir>
-    <IntDir>..\..\obj\msvc\static\$(Configuration)\</IntDir>
+    <OutDir>..\..\lib\msvc\vs2015\static\</OutDir>
+    <IntDir>..\..\obj\msvc\vs2015\static\$(Configuration)\</IntDir>
     <TargetName>alfont_md_d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug MT|Win32'">
-    <OutDir>..\..\lib\msvc\static\</OutDir>
-    <IntDir>..\..\obj\msvc\static\$(Configuration)\</IntDir>
+    <OutDir>..\..\lib\msvc\vs2015\static\</OutDir>
+    <IntDir>..\..\obj\msvc\vs2015\static\$(Configuration)\</IntDir>
     <TargetName>alfont_mt_d</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MD|Win32'">
